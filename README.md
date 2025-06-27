@@ -15,7 +15,7 @@ Implementar uma solução de raspagem de dados HTML com um fluxo **ETL** (Extra�
 - **Java 17+**
 - **Jsoup** para raspagem de dados
 - **Gson** para geração de arquivos JSON
-- IDE sugerida: IntelliJ ou VSCode com suporte a Java
+- IDE sugerida: Eclipse for Enterprise, IntelliJ ou VSCode com suporte a Java
 
 ---
 
