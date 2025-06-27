@@ -9,17 +9,17 @@ public class Main {
         String urlMassas = "https://www.receiteria.com.br/massas/";
         String urlDoces = "https://www.receiteria.com.br/doces/";
 
-        WebScrapper scraper = new WebScrapper();
+        WebScrapper scraperReceitaria = new ReceitariaScraper();
         JsonWriter writer = new JsonWriter();
 
         try {
-            List<Receita> receitasFrango = scraper.extrairReceitas(urlFrango);
+            List<Receita> receitasFrango = scraperReceitaria.extrairReceitas(urlFrango);
             writer.escreverJson(receitasFrango, "receitas_frango.json");
 
-            List<Receita> receitasMassas = scraper.extrairReceitas(urlMassas);
+            List<Receita> receitasMassas = scraperReceitaria.extrairReceitas(urlMassas);
             writer.escreverJson(receitasMassas, "receitas_massas.json");
 
-            List<Receita> receitasDoces = scraper.extrairReceitas(urlDoces);
+            List<Receita> receitasDoces = scraperReceitaria.extrairReceitas(urlDoces);
             writer.escreverJson(receitasDoces, "receitas_doces.json");
 
         } catch (IOException e) {
