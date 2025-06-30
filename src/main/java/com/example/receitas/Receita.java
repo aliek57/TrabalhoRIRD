@@ -4,12 +4,19 @@ import lombok.Data;
 
 @Data
 public class Receita {
+	private String id;
     private String titulo;
     private String ingredientes;
     private String modoPreparo;
     private String url;
 	public Receita() {
 		super();
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getTitulo() {
 		return titulo;
@@ -35,6 +42,4 @@ public class Receita {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-    
-    
 }

@@ -11,8 +11,7 @@ public class Main {
         
         JsonWriter writer = new JsonWriter();
 
-        try {
-        	
+        try {      	
         	WebScrapper receiteriaScraper = new ReceitariaScraper();
             List<Receita> receitasFrangoReceiteria = receiteriaScraper.extrairReceitas(urlReceiteria);
             writer.escreverJson(receitasFrangoReceiteria, "receitas_receiteria.json");
